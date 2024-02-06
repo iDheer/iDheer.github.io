@@ -334,6 +334,7 @@ body {
     }
 
     .name {
+        padding-top: 0.3rem;
         font-size: 3rem; 
         color: #ffffff;
     }
