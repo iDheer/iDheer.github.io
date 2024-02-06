@@ -326,7 +326,12 @@ body {
     }
 
     .intro {
-        padding-top: 23vh; 
+        padding-top: 21vh; 
+    }
+
+    .intro h1{
+        color: #ffffff;
+
     }
 
     .name {
@@ -335,6 +340,7 @@ body {
 
     .intro p {
         font-size: 1rem;
+        color: #ffffff;
     }
 
     .GetInTouch {
