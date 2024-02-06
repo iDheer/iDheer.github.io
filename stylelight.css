@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2vh;
+    padding-left: 4vh;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+.nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav a:hover {
+    color: #ff9d00;
+    transition: 0.2s;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bgimage {
+    background-image: url(BackgroundCrop1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.intro {
+    padding-left: 4vw;
+    height: 80vh;
+    padding-right: 4vw;
+    padding-top: 17vh;
+    padding-bottom: 1vh;
+    color: #000000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.name {
+    color: #000000;
+    font-size: 5rem;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 1vh;
+}
+
+.intro p {
+    margin-top: 4vh;
+    color: #000000;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.GetInTouch {
+    border-radius: 40px;
+    padding: 1vh;
+    border-color: #000000;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 15vw;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 3vh;
+}
+
+.GetInTouch:hover {
+    background-color: #b0d9ff;
+    color: #000000;
+    transition: 0.2s;
+}
+
+.heading {
+    color: #000000;
+    font-size: 2rem;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 6vh;
+    margin-right: 2vw;
+}
+
+.AboutMe {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: 4vh;
+    color: #000000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4vh;
+}
+
+.Education {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: 4vh;
+    color: #000000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4vh;
+}
+
+.Achievements {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: 4vh;
+    color: #000000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4vh;
+}
+
+.SocialMedia {
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: 4vh;
+    color: #000000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4vh;
+}
+
+.End {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    color: #000000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4vh;
+}
+
+.Logo ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 4vw;
+}
+
+.snapchat {
+    height: 50px;
+    width: 90px;
+}
+
+.insta {
+    height: 50px;
+    width: 50px;
+}
+
+.linkedin {
+    height: 50px;
+    width: 50px;
+}
+
+.spotify {
+    height: 50px;
+    width: 50px;
+}
+
+.facebook {
+    height: 50px;
+    width: 50px;
+}
+
+.github {
+    height: 50px;
+    width: 80px;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+}
+
+.switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+}
+
+.checkbox {
+    position: absolute;
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider {
+    background-color: var(--light);
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#buttonfix{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+@keyframes flash {
+    0% { background-color: inherit; }
+    50% { background-color: #ffea9e; } 
+    100% { background-color: inherit; }
+}
+
+.flash-background {
+    animation: flash 1.5s ease-in-out;
+}
+
+
+@media only screen and (max-width: 1030px) {
+    body {
+        font-size: 14px; 
+    }
+ 
+    .nav {
+        padding: 1rem;
+        
+    }
+
+    .nav-links{
+        padding-right: 2px;
+        border: 2px solid rgb(154, 154, 154);
+        border-top: 2px;
+        border-right: 2px;
+        border-bottom: 2px;
+    }
+
+    .nav-links li{
+        padding-left: 10px;
+
+    }
+
+    .nav a {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bgimage {
+        height: 55vh; 
+    }
+
+    .intro {
+        padding-top: 26vh; 
+    }
+
+    .name {
+        font-size: 3rem; 
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .GetInTouch {
+        width: 175px; 
+        margin-top: 2rem; 
+    }
+    #buttonfix{
+        bottom: 40px;        
+    }
+
+    .Logo ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .snapchat,
+    .insta,
+    .linkedin,
+    .spotify,
+    .facebook,
+    .github {
+        height: 40px; 
+        width: 40px; 
+    }
+
+    
+}
