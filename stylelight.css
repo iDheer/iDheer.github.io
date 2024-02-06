@@ -329,12 +329,13 @@ body {
         padding-top: 21.4vh; 
     }
 
-    .intro h1{
+    .profession{
         color: #ffffff;
     }
 
     .name {
         font-size: 3rem; 
+        color: #ffffff;
     }
 
     .intro p {
